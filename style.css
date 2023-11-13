@@ -21,7 +21,7 @@ body {
 
 header {
     position: absolute;
-    top: 0em;
+    top: 0;
     left: 20em;
     height: 90vh;
 }
@@ -62,8 +62,7 @@ section {
     display: grid;
     grid-template-rows: 25em;
     /*grid-template-columns: 15em;*/
-    border: 0.1em black;
-    border-style: solid;
+    border: 0.1em solid black;
 
     /*border-width: 15em;*/
 
@@ -74,8 +73,7 @@ section {
         /*background-color: yellow;*/
 
         width: 25em;
-        border: 0.1em black;
-        border-style: solid;
+        border: 0.1em solid black;
         /*border-width: 15em;*/
 
     }
