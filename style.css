@@ -137,6 +137,21 @@ p {
     font-family: AvenirRoman;
 }
 
+
+/* Forms */
+
+.forms li:first-of-type img {
+    border: 0.5px solid #e1e1e1;
+}
+
+.forms ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+
 /* body {
   min-height: 100vh;
 
