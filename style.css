@@ -202,7 +202,22 @@ p {
     background-color: var(--primary);
     color: var(--white);
 }
+/*buttons*/
+button {
+    border: none;
+    box-shadow: 10px 5px 5px #858585;
 
+    background-color: white;
+    /*color: #202121;*/
+    /*background-color: #DDFF00;*/
+    font-size: 1em;
+    font-family: AvenirMedium;
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin-left: 0.2em;
+    margin-top: 1em;
+    /*color: white;*/
+}
 
 /* body {
   min-height: 100vh;
