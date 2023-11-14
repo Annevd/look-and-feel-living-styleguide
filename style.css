@@ -1,16 +1,16 @@
 @font-face {
     font-family: AvenirRoman;
-    src: url(./font/Avenir-roman.ttf);
+    src: url(/font/Avenir-roman.ttf);
 }
 
 @font-face {
     font-family: AvenirMedium;
-    src: url(./font/Avenir-medium.ttf);
+    src: url(/font/Avenir-medium.ttf);
 }
 
 @font-face {
     font-family: AvenirBlack;
-    src: url(./font/Avenir-black.ttf);
+    src: url(/font/Avenir-black.ttf);
 }
 
 :root {
@@ -19,6 +19,7 @@
     --white: #fff;
     --grey: #676767;
     --primary: #e30614;
+    --light-grey: #c8c8c8;
 
     /* Transition  */
     --tran: all 0.2s ease;
@@ -34,11 +35,19 @@ body {
     font-family: AvenirMedium;
     background-color: var(--white);
     line-height: 1.5;
+    background-color: var(--light-grey);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
 }
 
 header {
     display: flex;
     flex-direction: row;
+    background-color: var(--white);
+    width: 80%;
     align-items: center;
     padding: 2rem 2rem 0.2rem 2rem;
 }
@@ -50,10 +59,14 @@ header img {
 
 header h1 {
     padding-left: 3.5rem;
+    text-transform: uppercase;
 }
 
 main {
+    display: flex;
     padding: 1rem;
+    width: 80%;
+    background-color: var(--white);
 }
 
 main ul {
@@ -98,6 +111,10 @@ ul a:hover {
     border-right: 1px solid var(--grey);
 }
 
+.content {
+    margin: 1em 0 1em 0;
+}
+
 .content a {
     text-decoration: underline;
     color: var(--grey);
@@ -124,13 +141,16 @@ h1 {
     font-family: AvenirBlack;
     color: var(--primary);
     font-size: 3rem;
-    padding: 1rem;
     width: 90%;
 }
 
 h2 {
     font-size: 2.25rem;
     border-bottom: 1px solid var(--grey);
+}
+
+h2:hover {
+    color: var(--primary);
 }
 
 p {
@@ -149,6 +169,52 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
+}
+
+/* Typography */
+
+.medium {
+    font-family: AvenirMedium;
+}
+
+.black {
+    font-family: AvenirBlack;
+}
+
+.roman {
+    font-family: AvenirRoman;
+}
+
+/* color */
+
+#color ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#color li {
+    padding: 0.1em;
+}
+
+#color li:first-of-type {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#color li:nth-of-type(2) {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+#color li:nth-of-type(3) {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#color li:nth-of-type(4) {
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 
