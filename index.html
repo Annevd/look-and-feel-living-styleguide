@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8"/>
@@ -186,48 +186,49 @@
                     Dit kan gaan om bijvoorbeeld een enkele regel tekst,
                      selecties aan de hand van checkboxes en keuzerondjes of opdrachten tot het verzenden van de ingevoerde informatie.</p>
 
-                <p>OBA gebruikt nu weinig tot geen styling voor forms. 
-                    In deze living styleguide staat een nieuw voorstel voor de vormgeving van forms.</p>
+                <p>OBA gebruikt nu weinig tot geen styling voor forms. In deze living styleguide staat een nieuw voorstel voor de vormgeving van forms.</p>
 
                 <h4>Zoekbalken</h4>
 
                 <p>Er zijn twee verschillende zoekbalken weergegeven:</p>
-
             
                 <ul>
                     <li>
-                        <em>Grijze zoekbalk op een witte achtergrond</em>
-                        <img src="images/forms/zoekbalk-grijs.png">
+                        <em>Gebruik een grijze zoekbalk in geval van een witte achtergrond</em>
+                        <img src="images/forms/zoekbalk-grijs.png" alt="voorbeeld van zoekbalk"> 
                     </li>
 
                     <li>
-                        <em>Witte zoekbalk op een grijze achtergrond</em>
-                        <img src="images/forms/zoekbalk-wit.png">
+                        <em>Gebruik een witte zoekbalk in geval van een grijze achtergrond</em>
+                        <img src="images/forms/zoekbalk-wit.png" alt="voorbeeld van zoekbalk">
                     </li>
                 </ul>
 
                 <p>Bij zoekbalken staat het zoek-icoontje altijd links in de balk en heeft het altijd een placeholder met bijvoorbeeld "Zoek..." 
                     om duidelijk te maken dat het om een zoekbalk gaat. Bij deze zoekbalk zit de input en het icoon ín het form element. 
-                    De input is 100% zo hoog en breed als het form element. Het form element kan je hoogte en breedte waarden geven als gewenst.</p>
+                    Klik <a href="#code-example1">hier</a> voor een concreet voorbeeld van de code.</p>
 
                 <p><span>Gebruik</span></p>
 
                 <ul>
                     <li>
                         <em>Margin</em>
-                        <img src="images/forms/margin.png">
+                        <img src="images/forms/margin.png" alt="voorbeeld van margin">
                     </li>
+
                     <li>
                         <em>Border-radius</em>
-                        <img src="images/forms/border-raidus.png">
+                        <img src="images/forms/border-raidus.png" alt="voorbeeld van border radius">
                     </li>
+
                     <li>
                         <em>Padding op form element</em>
-                        <img src="./images/forms/padding.png">
+                        <img src="./images/forms/padding.png" alt="voorbeeld van padding">
                     </li>
+
                     <li>
                         <em>Focus</em>
-                        <img src="images/forms/focus.png">
+                        <img src="images/forms/focus.png" alt="voorbeeld van focus">
                     </li>
                 </ul>
 
@@ -236,31 +237,105 @@
                 <p>Voor andere textinputs geldt ongeveer dezelfde weergave.</p>
                 
                 <p>De input is altijd wit (omdat wij werken op een grijze achtergrond) en het label staat links. Ook hier staat een placeholder indien nodig.
-                    In plaats van dat hier het icoon in het form element zit, heeft het nu een label links
-                    en krijgt de <em>input</em> een padding in plaats van hoogte en breedte-waarden. Het form element heeft in tegenstelling tot de zoekbalk hier géén padding.</p>
+                    In plaats van dat hier het icoon in het form element zit, heeft het nu een label links.
+                    Klik <a href="#code-example2">hier</a> voor een concreet voorbeeld van de code.</p>
 
                 <ul>
                     <li>
                         <em>Label</em>
-                        <img src="./images/forms/label.png">
+                        <img src="./images/forms/label.png" alt="voorbeeld van label">
                     </li>
+
                     <li>
                         <em>Padding op input element</em>
-                        <img src="./images/forms/padding-label.png">
+                        <img src="./images/forms/padding-label.png" alt="voorbeeld van padding">
                     </li>
+
                     <li>
                         <em>Margin</em>
-                        <img src="./images/forms/margin-label.png">
+                        <img src="./images/forms/margin-label.png" alt="voorbeeld van margin">
                     </li>
+
                     <li>
                         <em>Ruimte</em>
-                        <img src="./images/forms/ruimte.png">
+                        <img src="./images/forms/ruimte.png" alt="voorbeeld van ruimte">
                     </li>
                 </ul>
 
                 <h4>Voorbeeld code</h4>
 
-                <p><em>Codevoorbeeld zoekbalk:</em></p>
+                <p id="code-example1"><em>Codevoorbeeld zoekbalk:</em></p>
+
+                <pre>
+                HTML:
+                <code>
+                &lt;form&gt;
+                    &lt;i class="bx bx-search icon">&lt;/i&gt;
+                    &lt;input type="text" placeholder="placeholder"&gt;
+                &lt;/form&gt;
+                </code>
+                CSS:
+                <code>
+                form i {
+                    margin-right: 1rem;
+                    font-size: 1.25rem;
+                }
+                      
+                form {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.75rem 0.5rem;
+                    height: 1.5rem;
+                    border-radius: 0.75rem;
+                    width: 20rem;
+                    background: white;
+                }
+
+                input { 
+                    height: 100%;
+                    width: 100%;
+                    font-size: 1rem;
+                    font-family: AvenirMedium 'sans serif';
+                    outline: none;
+                    border: none;
+                }
+                </code>
+                </pre>
+                
+                <p id="code-example2"><em>Codevoorbeeld overige text input:</em></p>
+
+                <pre>
+                HTML:
+                <code>
+                &lt;form&gt;
+                    &lt;label class="label" for="label">Label&lt;/label&gt;
+                    &lt;input type="text" id="label" placeholder="placeholder"&gt;
+                &lt;/form&gt;
+                </code>
+                CSS:
+                <code>
+                form {
+                    display: flex;
+                    align-items: center;
+                    width: 20rem;
+                }
+
+                form input {
+                    padding: 0.5rem 0.5rem;
+                    border-radius: 0.75rem;
+                    border: none;
+                    outline: 0;
+                    font-family: AvenirMedium 'sans serif';
+                    font-size: 1rem;
+                    height: 1.5rem;
+                }
+
+                form label {
+                    margin-right: 1rem;
+                    font-family:  Verdana, Arial, Helvetica, sans-serif;
+                }
+                </code>
+                </pre>
 
             </div>
 

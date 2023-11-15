@@ -195,22 +195,22 @@ article img {
 
 
 
-/* Forms */
+/* Forms - Anne*/
 
-.forms span {
-    font-weight: bold;
+.forms h3 {
+    margin-top: 1rem;
 }
 
 .forms p {
     margin-top: 1rem;
 }
 
-.forms h3 {
+.forms h4 {
     margin-top: 1rem;
 }
 
-.forms h4 {
-    margin-top: 1rem;
+.forms span {
+    font-weight: bold;
 }
 
 .forms li em {
@@ -231,6 +231,13 @@ article img {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(426px, 1fr));
     gap: 0.5rem;
+}
+
+.forms pre,
+.forms code {
+    width: 100%;
+    white-space: pre-wrap;
+    word-break: break-all;
 }
 
 /* Typography */
