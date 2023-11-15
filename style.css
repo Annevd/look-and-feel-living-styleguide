@@ -269,7 +269,14 @@ button {
     margin-top: 1em;
     /*color: white;*/
 }
+.grid-images-buttons{
+    display: grid;
+   grid-template-areas: "item1 item2"
+    "item3 item4";
+}
+.grid-item{
 
+}
 /* body {
   min-height: 100vh;
 
