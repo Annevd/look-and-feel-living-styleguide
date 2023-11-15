@@ -137,6 +137,45 @@ p {
     font-family: AvenirRoman;
 }
 
+
+/* wingsan's part: images */
+
+.logos  {
+    display: flex;
+}
+
+.logos img {
+    width: 155px;
+    margin: 2rem;
+}
+
+.articles {
+    display: flex;
+    text-align: center;
+}
+article img {
+    width: 4rem;
+    height: 6rem;
+    margin: 1rem;
+    box-shadow: 3px 3px #676767;
+    /*0.2rem 0.2rem #676767;*/
+}
+
+.layout img {
+    width: 228px;
+    border-radius: 1rem;
+}
+
+.captions img {
+    width: 228px;
+    border-radius:
+}
+
+
+
+
+
+
 /* body {
   min-height: 100vh;
 
