@@ -102,9 +102,72 @@
 
             <div class="content" id="images">
                 <h2>Images</h2>
-                <p>
-                    inhoud
-                </p>
+
+                <div class="categories">
+                    ...
+                </div>
+
+                <div class="logo">
+                    <h3>Logo</h3>
+                    <p>Voor de OBA corporate logo wordt de hoofdkleur rood aangehouden. De overige gebruikte kleuren
+                        voor de OBA logo zijn zwart en wit.</p>
+                    <div class="logos">
+                        <img alt="OBA logo rood" src="./images/OBA_rood_rgb.png">
+                        <img alt="OBA logo zwart" src="./images/OBA_zwart_rgb.png">
+                        <img alt="OBA logo wit" src="./images/OBA logo wit.png">
+                    </div>
+                </div>
+
+                <div class="icons">
+                    <h3>Icons</h3>
+                    <p>...</p>
+                </div>
+
+                <div class="producten">
+                    <h3>Producten</h3>
+                    <p> Producten zoals boeken, CD's en DVD's hebben standaard een schaduw</p>
+                    <div class="articles">
+                        <article>
+                            <img alt="foto" src="https://i.ibb.co/ph8QQBc/cover-stenen-eten.jpg">
+                            <h4>titel</h4>
+                            <h5>auteur</h5>
+                        </article>
+
+                        <article>
+                            <img alt="foto" src="https://i.ibb.co/ySLRHk8/cover-zij-ik-en-de-sterren.jpg">
+                            <h4>titel</h4>
+                            <h5>auteur</h5>
+                        </article>
+
+                        <article>
+                            <img src="https://i.ibb.co/wYQbDFz/cover-nijntje.jpg">
+                            <h4>titel</h4>
+                            <h5>auteur</h5>
+                        </article>
+
+                        <article>
+                            <img src="https://i.ibb.co/7kGPywB/cover-boek-eet-hond.jpg">
+                            <h4>titel</h4>
+                            <h5>auteur</h5>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="layout">
+                    <h3>Content images</h3>
+                    <p>Structuur brengen door zoveel mogelijk dezelfde vorm van content images te gebruiken...</p>
+                    <img src="https://i.ibb.co/wpwYMNh/oba-ebooks-en-luisterboeken.png">
+                </div>
+
+                <div class="captions">
+                    <h3>Image with captions</h3>
+                    <p>Zoveel mogelijk dezelfde structuur aanhouden.. bijvoorbeeld de captions altijd boven of altijd
+                        beneden.</p>
+                    <img src="https://i.ibb.co/wpwYMNh/oba-ebooks-en-luisterboeken.png">
+                    <h4>E-books en luisterboeken</h4>
+                </div>
+
+
             </div>
 
             <div class="content" id="media">
@@ -134,12 +197,12 @@
                 <ul>
                     <li>
                         <em>Grijze zoekbalk op een witte achtergrond</em>
-                        <img src="./images/forms/zoekbalk-grijs.png">
+                        <img src="images/forms/zoekbalk-grijs.png">
                     </li>
 
                     <li>
                         <em>Witte zoekbalk op een grijze achtergrond</em>
-                        <img src="./images/forms/zoekbalk-wit.png">
+                        <img src="images/forms/zoekbalk-wit.png">
                     </li>
                 </ul>
 
@@ -152,11 +215,11 @@
                 <ul>
                     <li>
                         <em>Margin</em>
-                        <img src="./images/forms/margin.png">
+                        <img src="images/forms/margin.png">
                     </li>
                     <li>
                         <em>Border-radius</em>
-                        <img src="./images/forms/border-raidus.png">
+                        <img src="images/forms/border-raidus.png">
                     </li>
                     <li>
                         <em>Padding op form element</em>
@@ -164,7 +227,7 @@
                     </li>
                     <li>
                         <em>Focus</em>
-                        <img src="./images/forms/focus.png">
+                        <img src="images/forms/focus.png">
                     </li>
                 </ul>
 
@@ -212,19 +275,49 @@
                 <h2>Buttons</h2>
                 <p>De oba heeft vaak een witte button met een zwarte tekst erin of andersom</p>
                 <p>Ook hebben ze vaak een link erin dat je naar een andere pagina gaat</p>
-                <ul>
-                    <li>   <img alt="foto van button reset toon alle resultaten" src="images/buttons/img_1.png"></li>
+                <div class="grid-images-buttons">
+                    <div class="grid-item"><img alt="foto van button reset toon alle resultaten"
+                                                src="images/buttons/img_1.png"></div>
+                    <div class="grid-item"><img alt="foto van button reset toon alle resultaten"
+                                                src="images/buttons/info-uitleenpagina.png"></div>
+                    <div class="grid-item"><img alt="foto van button reset toon alle resultaten"
+                                                src="images/buttons/button-boetepagina.png"></div>
+                </div>
+                <p>de html code:</p>
+                <pre>
 
-                    <li>            <img alt="foto van button info" src="images/buttons/info-uitleenpagina.png"></li>
-                    <li>     <img alt="foto van button boetepagina" src="images/buttons/button-boetepagina.png"></li>
-                    <li>     <button aria-pressed="false" class="button-boeken" onclick="boeken()" tabindex="0"
-                                     type="button"> boeken overzicht
-                    </button></li>
-                </ul>
-                <p>code html :<a href="#">link naar code</a> </p>
-                <p>code css :<a href="#">link naar code</a> </p>
+                        &lt;button aria-pressed="false" class="" onclick="boeken()" tabindex="0"
+                                 type="button"> boeken overzicht
+                        button&gt;
 
 
+                </pre>
+                <p>de css code:</p>
+                <pre>
+                    <code>
+
+                        .button, .reset-button, .filterbutton {
+                        border: none;
+                        box-shadow: 10px 5px 5px var(--toggle-color);
+                        background-color: var(--background-color-buttons-white);
+                        /*color: #202121;*/
+                        /*background-color: #DDFF00;*/
+                        font-size: 1em;
+                        font-family: AvenirMedium;
+                        border-radius: 6px;
+                        padding: 0.5rem;
+                        margin-left: 0.2em;
+                        margin-top: var(--margin-1em);
+                        /*color: white;*/
+                    }
+
+                    </code> </pre>
+                <p>code html :<a
+                        href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/6125bd3b5be392c2d51b6fae48fc9d760889c934/index.html#L193-L195">link
+                    naar code</a></p>
+                <p>code css :<a
+                        href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/6125bd3b5be392c2d51b6fae48fc9d760889c934/styles/styles.css#L438-L449">link
+                    naar code</a></p>
 
 
                 <h3>De huidige stijl die nu op de website staat</h3>
@@ -241,6 +334,77 @@
                 <h2>Tables</h2>
                 <p>De oba heeft geen tabel erin zitten en deze tabel zou volgens de kleuren van de oba zijn</p>
                 <img alt="foto van button info" src="images/buttons/table.png">
+                <pre>
+                    <code>
+                        <p>de html code</p>
+           &lt;table aria-label="dit is de tabel met het overzichtboetepagina">
+               &lt;tr>
+                   &lt;th id="naam" scope="col">naam boek
+              &lt;th id="datum" scope="col">datum in te leveren</th>
+                </tr>
+              &lt;tr>
+                   &lt;td headers="naam">ajax jaarboek</td&gt;
+              &lt;td headers="datum">28-12-2023</td&gt;
+              &lt;/tr>
+               &lt;tr>
+                   &lt; td>devils wears prada</td&gt;
+              &lt;<td>15-10-2023< /td>
+               &lt;/tr>
+               &lt; tr>
+                   &lt;td>psv jaarboek< /td>
+                    &lt;td>15-12-2023< /td>
+              &lt;/tr>
+               &lt;tr>
+                   &lt;td>gijp</td>
+                  &lt; td>10-11-2023< /td>
+               &lt;/tr>
+                &lt;tr>
+                   &lt;td>nirwana /td>
+                  &lt;td>14-2-2023</td>
+              &lt; /tr>
+               &lt; tr>
+                   &lt;td>afkowobo</td>
+              &lt;td>19-10-2023</td >
+              &lt;/tr>
+           &lt;table>
+
+                    </code>
+                </pre>
+                <p>de css code :</p>
+                <pre>
+                    <code>
+                        th {
+    /*color: #FFFFFF;*/
+    background-color: #ffffff;
+    border: var(--border-color-line);
+    /*border: 1px solid #dddddd; !*  hier word een randje meegegeven aan de th  *!*/
+    font-size: 1.5em;
+    line-height: 1.5;
+
+
+}
+
+/*dit zijn de celblockej*/
+td {
+    background-color: #ffffff;
+    border: var(--border-color-line);
+    font-size: 1em;
+    line-height: 1.5;
+    margin: var(--margin-1em);
+
+
+}
+                    </code>
+                </pre>
+
+                <p>code html :<a
+                        href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/6125bd3b5be392c2d51b6fae48fc9d760889c934/boete.index.html#L155C12-L184">link
+                    naar code</a></p>
+                <p>code css :<a
+                        href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/6125bd3b5be392c2d51b6fae48fc9d760889c934/styles/styles.css#L410-L430">link
+                    naar code</a></p>
+
+
             </div>
         </div>
     </div>

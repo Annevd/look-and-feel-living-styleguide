@@ -158,6 +158,43 @@ p {
 }
 
 
+/* wingsan's part: images */
+
+.logos  {
+    display: flex;
+}
+
+.logos img {
+    width: 155px;
+    margin: 2rem;
+}
+
+.articles {
+    display: flex;
+    text-align: center;
+}
+article img {
+    width: 4rem;
+    height: 6rem;
+    margin: 1rem;
+    box-shadow: 3px 3px #676767;
+    /*0.2rem 0.2rem #676767;*/
+}
+
+.layout img {
+    width: 228px;
+    border-radius: 1rem;
+}
+
+.captions img {
+    width: 228px;
+    border-radius: 1rem;
+}
+
+
+
+
+
 /* Forms */
 
 .forms span {
@@ -257,7 +294,22 @@ button {
     margin-top: 1em;
     /*color: white;*/
 }
-
+.grid-images-buttons{
+    display: grid;
+   grid-template-areas: "item1 item2" "item3";
+}
+pre{
+    background-color: #f6f6f6;
+}
+@media (min-width: 0em) and (max-width: 40em) {
+    .grid-images-buttons{
+        display: grid;
+        grid-template-areas: "item1 "
+        "item2"
+    "item3 "
+        ;
+    }
+}
 /* body {
   min-height: 100vh;
 
