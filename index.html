@@ -196,12 +196,12 @@
                 <ul>
                     <li>
                         <em>Grijze zoekbalk op een witte achtergrond</em>
-                        <img src="./images/forms/zoekbalk-grijs.png">
+                        <img src="images/forms/zoekbalk-grijs.png">
                     </li>
 
                     <li>
                         <em>Witte zoekbalk op een grijze achtergrond</em>
-                        <img src="./images/forms/zoekbalk-wit.png">
+                        <img src="images/forms/zoekbalk-wit.png">
                     </li>
                 </ul>
                 <p>
@@ -216,19 +216,19 @@
                 <ul>
                     <li>
                         <em>Margin</em>
-                        <img src="/images/forms/margin.png">
+                        <img src="images/forms/margin.png">
                     </li>
                     <li>
                         <em>Border-radius</em>
-                        <img src="/images/forms/border-raidus.png">
+                        <img src="images/forms/border-raidus.png">
                     </li>
                     <li>
                         <em>Padding</em>
-                        <img src="/images/forms/padding.png">
+                        <img src="images/forms/padding.png">
                     </li>
                     <li>
                         <em>Focus</em>
-                        <img src="/images/forms/focus.png">
+                        <img src="images/forms/focus.png">
                     </li>
                 </ul>
 
@@ -281,31 +281,33 @@
                     <div class="grid-item"><img alt="foto van button reset toon alle resultaten"
                                                 src="images/buttons/button-boetepagina.png"></div>
                 </div>
+                <p>de html code:</p>
                 <pre>
                     <code>
-                         <&lt;button aria-pressed="false" class="" onclick="boeken()" tabindex="0"
+                         &lt;button aria-pressed="false" class="" onclick="boeken()" tabindex="0"
                                  type="button"> boeken overzicht
-                        </button>&gt;
+                        button&gt;
                     </code>
 
                 </pre>
+                <p>de css code:</p>
                 <pre>
-                    <code>&lt;
-                        de css code
-                    .button, .reset-button, .filterbutton {
-    border: none;
-    box-shadow: 10px 5px 5px var(--toggle-color);
-    background-color: var(--background-color-buttons-white);
-    /*color: #202121;*/
-    /*background-color: #DDFF00;*/
-    font-size: 1em;
-    font-family: AvenirMedium;
-    border-radius: 6px;
-    padding: 0.5rem;
-    margin-left: 0.2em;
-    margin-top: var(--margin-1em);
-    /*color: white;*/
-}
+                    <code>
+                        &lt;
+                        .button, .reset-button, .filterbutton {
+                        border: none;
+                        box-shadow: 10px 5px 5px var(--toggle-color);
+                        background-color: var(--background-color-buttons-white);
+                        /*color: #202121;*/
+                        /*background-color: #DDFF00;*/
+                        font-size: 1em;
+                        font-family: AvenirMedium;
+                        border-radius: 6px;
+                        padding: 0.5rem;
+                        margin-left: 0.2em;
+                        margin-top: var(--margin-1em);
+                        /*color: white;*/
+                    }
 
                     &gt;</code> </pre>
                 <p>code html :<a
@@ -331,8 +333,8 @@
                 <p>De oba heeft geen tabel erin zitten en deze tabel zou volgens de kleuren van de oba zijn</p>
                 <img alt="foto van button info" src="images/buttons/table.png">
                 <pre>
-                    <code >
-
+                    <code>
+                        <p>de html code</p>
            &lt;table aria-label="dit is de tabel met het overzichtboetepagina">
                 &lt; tr>
                     &lt; th id="naam" scope="col">naam boek</th> &gt;
@@ -364,6 +366,32 @@
                 &lt;/tr>
             &lt;/table>
 
+                    </code>
+                </pre>
+                <p>de css code :</p>
+                <pre>
+                    <code>&lt;
+                        th {
+    /*color: #FFFFFF;*/
+    background-color: #ffffff;
+    border: var(--border-color-line);
+    /*border: 1px solid #dddddd; !*  hier word een randje meegegeven aan de th  *!*/
+    font-size: 1.5em;
+    line-height: 1.5;
+
+
+}
+
+/*dit zijn de celblockej*/
+td {
+    background-color: #ffffff;
+    border: var(--border-color-line);
+    font-size: 1em;
+    line-height: 1.5;
+    margin: var(--margin-1em);
+
+
+}&gt;
                     </code>
                 </pre>
 
