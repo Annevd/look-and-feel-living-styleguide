@@ -1,16 +1,16 @@
 @font-face {
     font-family: AvenirRoman;
-    src: url(/font/Avenir-roman.ttf);
+    src: url(./font/Avenir-roman.ttf);
 }
 
 @font-face {
     font-family: AvenirMedium;
-    src: url(/font/Avenir-medium.ttf);
+    src: url(./font/Avenir-medium.ttf);
 }
 
 @font-face {
     font-family: AvenirBlack;
-    src: url(/font/Avenir-black.ttf);
+    src: url(./font/Avenir\ -black.ttf);
 }
 
 :root {
@@ -32,7 +32,7 @@
 }
 
 body {
-    font-family: AvenirMedium;
+    font-family: AvenirMedium, Arial, Helvetica, sans-serif;
     background-color: var(--white);
     line-height: 1.5;
     background-color: var(--light-grey);
