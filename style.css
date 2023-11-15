@@ -160,15 +160,40 @@ p {
 
 /* Forms */
 
+.forms span {
+    font-weight: bold;
+}
+
+.forms p {
+    margin-top: 1rem;
+}
+
+.forms h3 {
+    margin-top: 1rem;
+}
+
+.forms h4 {
+    margin-top: 1rem;
+}
+
+.forms li em {
+    display: block;
+}
+
+.forms img {
+    max-width: 468px;
+    width: 100%;
+}
+
 .forms li:first-of-type img {
     border: 0.5px solid #e1e1e1;
 }
 
 .forms ul {
     margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(426px, 1fr));
+    gap: 0.5rem;
 }
 
 /* Typography */
