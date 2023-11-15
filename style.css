@@ -271,8 +271,10 @@ button {
 }
 .grid-images-buttons{
     display: grid;
-   grid-template-areas: "item1 item2"
-    "item3 item4";
+   grid-template-areas: "item1 item2" "item3";
+}
+pre{
+    background-color: #f6f6f6;
 }
 @media (min-width: 0em) and (max-width: 40em) {
     .grid-images-buttons{
@@ -280,7 +282,7 @@ button {
         grid-template-areas: "item1 "
         "item2"
     "item3 "
-        "item4";
+        ;
     }
 }
 /* body {
