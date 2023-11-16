@@ -481,22 +481,6 @@ td {
   line-height: 1.5;
   margin: 1em;
 }
-.p_icons_css {
-  margin: 5px 0 5px 0;
-  padding: 7px 35px 8px 9px;
-  border: 1px solid transparent;
-  color: #fff;
-  text-decoration: none;
-  text-shadow: none;
-  background-color: #000;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMBAMAAACpRTGTAAAAA3NCSVQICAjb4U/gAAAAKlBMVEX///////////////////////////////////////////////////////9q+00tAAAADnRSTlMAESJEVWZ3maq7zN3u/3bG7fkAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA2SURBVAiZY0hkAIE7ASDy7k0DEHn3ugKIvHtMAETe3QImr4NIoPzdu7cDQLIgfXebQLoWgwgABAEcp+sJB4MAAAAASUVORK5CYII=);
-  background-position: right 10px center;
-  background-repeat: no-repeat;
-  border: 0;
-  padding: 2px 25px 3px 9px;
-  background-position: right 7px center;
-  width: 20em;
-}
 /* body {
   min-height: 100vh;
 
