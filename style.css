@@ -203,14 +203,8 @@ article img {
 
 /* Forms - Anne*/
 
-.forms h3 {
-  margin-top: 1rem;
-}
-
-.forms p {
-  margin-top: 1rem;
-}
-
+.forms h3,
+.forms p,
 .forms h4 {
   margin-top: 1rem;
 }
