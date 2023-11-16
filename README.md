@@ -3,7 +3,7 @@ Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uit
 De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 ## Beschrijving
-Ontwerp en maak een living styleguide voor een opdrachtgever.
+Voor de opdrachtgever OBA hebben we als groep een living styleguide gemaakt, hierin vindt je terug hoe je de styling van OBA kunt aanhouden. De styleguide is ingedeeld in de volgende categoriën: typografy, color, navigation, images, media, forms, buttons en tables.
 
 ## Screenshots Living Styleguide OBA
 ![screenshot styleguide](https://github.com/yujing-student/look-and-feel-living-styleguide/assets/144004647/6e3dfb76-556e-4067-9903-b22c3f92cae1)
