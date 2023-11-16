@@ -164,31 +164,76 @@ p {
     display: flex;
 }
 
+.kleurlogo {
+    display: block;
+    margin-top: 1rem;
+}
+
 .logos img {
-    width: 155px;
+    width: 10rem;
     margin: 2rem;
+}
+
+.logos :nth-of-type(2) {
+    background-color: #D9D9D9;
+    border-radius: 1rem;
+}
+
+.logos :nth-of-type(3) {
+    background-color :#000;
+    border-radius: 1rem;
+}
+
+.layout {
+    margin-top: 2rem;
+}
+
+.layout img {
+    width: 100%;
+    margin: 2rem;
+}
+
+.captions {
+    margin-top: 2rem;
+}
+
+.jeugd {
+    display: flex;
+}
+
+.jeugd img {
+    width: 20rem;
+    margin: 2rem;
+}
+
+.jeugd h4 p {
+    display: flex;
+    text-align: center;
+}
+
+.illustratie {
+    display: flex;
+}
+
+.illustratie img {
+    width: 20rem;
+    margin: 2rem;
+}
+
+.producten {
+    margin-top: 2rem;
 }
 
 .articles {
     display: flex;
     text-align: center;
 }
+
 article img {
-    width: 4rem;
-    height: 6rem;
+    width: 5rem;
+    height: 7rem;
     margin: 1rem;
-    box-shadow: 3px 3px #676767;
-    /*0.2rem 0.2rem #676767;*/
-}
-
-.layout img {
-    width: 228px;
-    border-radius: 1rem;
-}
-
-.captions img {
-    width: 228px;
-    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem #D9D9D9;
 }
 
 

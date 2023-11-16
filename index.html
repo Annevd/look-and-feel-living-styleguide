@@ -99,32 +99,118 @@
 
                 </ul>
             </div>
-
+            
+            <!-- wingsan's part: images -->
             <div class="content" id="images">
                 <h2>Images</h2>
-
-                    <div class="categories">
-                        ...
-                    </div>
                 
                     <div class="logo">
                         <h3>Logo</h3>
-                        <p>Voor de OBA corporate logo wordt de hoofdkleur rood aangehouden. De overige gebruikte kleuren voor de OBA logo zijn zwart en wit.</p>
+                        <p>Voor de OBA corporate logo worden 3 kleuren aangehouden, namelijk rood, zwart en wit. 
+                            De voorkeur gaat uit naar de hoofdkleur rood met een witte achtergrond.  
+                            Indien er wordt gekozen voor een andere kleur achtergrond mag dat, 
+                            mits het contrast van de rode logo en de zelf gekozen achtergrondkleur voldoende contrast heeft. 
+                            Wanneer het contrast niet voldoende is, kan het zwarte logo gebruikt worden, gevolgd door het witte logo. 
+                            Ook het zwarte logo moet voldoende contrast bieden en kan dus niet op een donkere of rode achtergrond gebruikt worden. 
+                            Het witte logo kan gebruikt worden op een donkere achtergrond.
+                            </p>
+
+                        <div class="kleurlogo">
+                            <h4>rood - HEX #E61C24 - RGB 230, 28, 36 - CMYK 0, 100, 100, 0</h4>
+                            <h4>zwart - HEX #000000 - RGB 0, 0, 0 - CMYK 0, 0, 0, 100</h4>
+                            <h4>wit - HEX #FFFFFF - RGB 255, 255, 255 - CMYK 0, 0, 0, 0</h4>
+
+                        </div>
                         <div class="logos">
                             <img src="./images/OBA_rood_rgb.png" alt="OBA logo rood">
                             <img src="./images/OBA_zwart_rgb.png" alt="OBA logo zwart">
                             <img src="./images/OBA logo wit.png" alt="OBA logo wit">
                         </div>
+
+                        <div class="logocode">
+                            <h4>Code</h4>
+                            <pre>
+                                <code>
+                                    &lt;img src="./images/OBA_rood_rgb.png" alt="OBA logo rood"&gt;
+                                    &lt;img src="./images/OBA_zwart_rgb.png" alt="OBA logo zwart"&gt;
+                                    &lt;img src="./images/OBA logo wit.png" alt="OBA logo wit"&gt;
+                                </code>
+                            </pre>
+                        </div>
+
+
                     </div> 
 
-                    <div class="icons">
-                        <h3>Icons</h3>
-                        <p>...</p>
+                    <div class="layout">
+                        <h3>Content images</h3>
+                        <p>OBA gebruikt momenteel nog veel verschillende type afbeeldingen, in verschillende groottes en vormen.</p>
+                        <img src="https://i.ibb.co/T45fGSn/oba-content-image-1.png">
+                    </div>
+
+                    <div class="captions">
+                        <h3>Image with captions</h3>
+                        <p>OBA maakt op hun site gebruik van afbeeldingen en illustraties als content. 
+                            De captions bij afbeeldingen staan zowel boven, onder als in de afbeelding. 
+                            Door consistent te blijven in de layouts, zorgen we voor meer structuur. 
+                            Dus bijvoorbeeld alleen illustraties of alleen afbeeldingen te gebruiken en niet een mix ervan.
+                            Daarom gaat de voorkeur uit naar captions onder de afbeelding.
+                            Ook hebben de afbeeldingen een border, dit zorgt voor een zachtere uitstraling.</p>
+                        
+                        <div class="jeugd">
+                            <div class="babies">
+                                <img src="https://i.ibb.co/PwjCttS/oba-0-6-jaar.png">
+                                <h4>0-6 jaar</h4>
+                                <p>beschrijving...</p>
+                            </div>
+
+                            <div class="kinderen">
+                                <img src="https://i.ibb.co/S0jX7gp/oba-6-12-jaar.png">
+                                <h4>6-12 jaar</h4>
+                                <p>beschrijving...</p>
+                            </div>
+                            
+                            <div class="jongeren">
+                                <img src="https://i.ibb.co/qsxn71V/oba-12.png">
+                                <h4>12+</h4>
+                                <p>beschrijving...</p>
+                            </div>
+                        </div>
+
+                        <div class="illustratie">
+                            <img src="https://i.ibb.co/Fwh1MQM/oba-illustratie-1.png">
+                            <img src="https://i.ibb.co/hD5LRRS/oba-illustratie-2.png">
+                            <img src="https://i.ibb.co/T0Z7qW3/Scherm-afbeelding-2023-11-15-om-13-21-56.png">
+                        </div>
+                    </div>
+
+                    <div class="logocode">
+                        <h4>Code</h4>
+                        <pre>
+                            <code>
+                                HTML
+                                &lt;div class="jeugd"&gt;
+                                    &lt;div class="babies"&gt;
+                                        &lt;img src="https://i.ibb.co/PwjCttS/oba-0-6-jaar.png"&gt;
+                                        &lt;h4&gt;0-6 jaar &lt;h4&gt;
+                                        &lt;p&gt;beschrijving...&lt;/p&gt;
+                                    &lt;div &gt;
+                                
+                                CSS
+                                    .jeugd {
+                                        display: flex;
+                                    }
+                                    
+                                    .jeugd img {
+                                        width: 20rem;
+                                        margin: 2rem;
+                                    }
+                            </code>
+                        </pre>
                     </div>
 
                     <div class="producten">
                         <h3>Producten</h3>
-                        <p> Producten zoals boeken, CD's en DVD's hebben standaard een schaduw</p>
+                        <p> Producten zoals boeken, CD's en DVD's hebben standaard een schaduw van 0.2rem, kleur #D9D9D9.</p>
                         <div class="articles">
                             <article>
                                 <img src="https://i.ibb.co/ph8QQBc/cover-stenen-eten.jpg">
@@ -152,18 +238,32 @@
                         </div>
                     </div>
 
-                    <div class="layout">
-                        <h3>Content images</h3>
-                        <p>Structuur brengen door zoveel mogelijk dezelfde vorm van content images te gebruiken...</p>
-                        <img src="https://i.ibb.co/wpwYMNh/oba-ebooks-en-luisterboeken.png">
-                    </div>
+                    <h4>Code</h4>
+                        <code>
+                            <pre>
+                                HTML
+                                &lt;div class="articles"&gt;
+                                    &lt;article&gt;
+                                        &lt;img src="https://i.ibb.co/ph8QQBc/cover-stenen-eten.jpg"&gt;
+                                        &lt;h4&gt;titel&lt;/h4&gt;
+                                        &lt;h5&gt;auteur&lt;/h5&gt;
+                                    &lt;/article&gt;
 
-                    <div class="captions">
-                        <h3>Image with captions</h3>
-                        <p>Zoveel mogelijk dezelfde structuur aanhouden.. bijvoorbeeld de captions altijd boven of altijd beneden.</p>
-                        <img src="https://i.ibb.co/wpwYMNh/oba-ebooks-en-luisterboeken.png">
-                        <h4>E-books en luisterboeken</h4>
-                    </div>
+                                CSS
+                                .articles {
+                                    display: flex;
+                                    text-align: center;
+                                }
+                                
+                                article img {
+                                    width: 5rem;
+                                    height: 7rem;
+                                    margin: 1rem;
+                                    box-shadow: 0.2rem 0.2rem #D9D9D9;
+                                }
+                            </pre>
+                        </code>
+
 
                 
             </div>
