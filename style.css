@@ -242,7 +242,10 @@ article img {
     height: 7rem;
     margin: 1rem;
     box-shadow: 0.2rem 0.2rem #D9D9D9;
-  /*0.2rem 0.2rem #676767;*/
+}
+
+.logocode {
+  margin-top: 1rem;
 }
 
 /* Forms - Anne*/
