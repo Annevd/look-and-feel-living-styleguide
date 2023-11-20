@@ -456,6 +456,10 @@ button {
   display: grid;
   grid-template-areas: "item1 item2" "item3";
 }
+.button_hover:hover{
+  background-color: #ffffff; /* Green */
+  color: #ff3232;
+}
 pre {
   background-color: #f6f6f6;
 }
